@@ -70,7 +70,7 @@
 </div>
 <!-- InstanceBeginEditable name="EditRegion1" -->
 <div class="login" style="background:url(/static/images/12.jpg) right center no-repeat #fff">
-<h2>登录</h2>
+<h2>登录 <span style="color: red">{{Warn}}</span></h2>
 {%csrf_token%}
 <form action="/user/login_handle/" method="post" style="width:600px">
 <div>

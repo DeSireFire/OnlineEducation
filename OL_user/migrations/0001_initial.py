@@ -13,15 +13,15 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='UserInfo',
             fields=[
-                ('id', models.AutoField(verbose_name='ID', auto_created=True, serialize=False, primary_key=True)),
-                ('User_email', models.CharField(max_length=100, unique=True)),
-                ('User_name', models.CharField(max_length=20, unique=True)),
-                ('User_pwd', models.CharField(max_length=40)),
-                ('User_permission', models.CharField(max_length=20, default='3')),
+                ('id', models.AutoField(auto_created=True, primary_key=True, verbose_name='ID', serialize=False)),
+                ('User_email', models.CharField(unique=True, max_length=100)),
+                ('User_name', models.CharField(unique=True, max_length=20)),
+                ('User_pwd', models.CharField(max_length=50)),
+                ('User_permission', models.CharField(default='3', max_length=20)),
                 ('User_role', models.CharField(max_length=20)),
-                ('User_info', models.CharField(max_length=20, default='')),
-                ('User_address', models.CharField(max_length=100, default='')),
-                ('User_phone', models.CharField(max_length=11, default='')),
+                ('User_info', models.CharField(default='', max_length=20)),
+                ('User_address', models.CharField(default='', max_length=100)),
+                ('User_phone', models.CharField(default='', max_length=11)),
             ],
         ),
     ]
