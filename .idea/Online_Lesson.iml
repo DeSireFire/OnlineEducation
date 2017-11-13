@@ -5,6 +5,7 @@
     <orderEntry type="jdk" jdkName="Python 3.5.2 virtualenv at ~/myvirtualenv/VWP3" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="dailyfresh" />
+    <orderEntry type="module" module-name="work_03" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_FOLDERS">
